@@ -64,6 +64,7 @@ export default {
       if (this.current.currentSrc === image.currentSrc) {
         this.final += 1;
         if (this.final === 14) {
+          this.final = 0;
           const otherFlipp = document.querySelectorAll('.flipper');
           otherFlipp.forEach((elem) => {
             if (!elem.classList.contains('.flip')) elem.classList.add('flip');
